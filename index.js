@@ -120,12 +120,12 @@ console.log(typeof className);
 console.log(className, typeof className)
 myNumber = 5;
 console.log(typeof myNumber)
-
+/*
 let myAge = window.prompt("How old are you?")
 console.log(typeof myAge)
 myAge = Number(myAge) // Convert to number
 console.log(typeof myAge)
-
+*/
 let x = "pizza";
 let y = "pizza";
 let z = "";
@@ -136,3 +136,97 @@ y = String(y);
 console.log(typeof y)
 z = Boolean(z); // checks if the string has stuff in it, false = empty, true = has string
 console.log(z)
+
+
+/*
+
+MODULE 3 (M3)
+
+
+
+
+
+// 4 TYPES OF ERRORS //
+
+1. Load-time ERRORS (a. k. a. Syntax Errors)
+    Occurs when program is loaded by browser.
+    Grammar. Spelling mistakes, missing parentheses. Incomplete brackets.
+
+2. Run-time Errors
+    Occur when interpreter is unable to run the code.
+    Syntax is correct, but execution is broken.
+    ex. Reference an undeclared variable. Illegal math operations.
+
+3. Logic Errors
+ When code runs unexpectedly.
+
+4. User Error
+When user odes something un expected to the dev.
+
+
+// DEBUGGING METHODS & TOOLS //
+1. Tracing: The examination of individual statments in an executing program.
+Displaying alert boxes at diff. points to show results intermittently.
+
+2. Logging
+(ex. console.log)
+
+3. Commenting Out Code
+
+4. Break Mode and Breakpoints
+    Break Mode: Mode for running a program in which execution is paused/suspended to allow you to review the current state of variables and functions.
+
+5. Scope Window
+6. Watch Window
+7. Call Stack
+
+try catch finally block
+
+*/
+
+try {
+    console.log(x);
+}
+catch {
+    console.log;
+}
+finally {
+    // Close files
+    // Close connections
+    // Release resources
+    console.log("This code always executes");
+}
+// try{
+//     const dividend = window.prompt("Enter dividend");
+//     const divisor = window.prompt("Enter a divisor");
+
+//     const result = dividend / divisor;
+//     console.log(result);
+// }
+// catch{
+//     console.error(error)
+// }
+// console.log("You have reached the end.");
+
+try{
+    const dividend = window.prompt("Enter a dividend");
+    const divisor = window.prompt("Enter a divisor");
+
+    if(divisor == 0){
+        throw new Error("You can't divide a zero!");
+    }
+    if(isNaN(dvidend) || isNaN(divisor)){
+        throw new Error("Value must a number.")
+    }
+    const result = dividend / divisor;
+    console.log(result);
+}
+catch(error){
+    console.error(error);
+}
+
+try{
+    alert(username)
+} catch(error){
+    console.error("Error: this variable has not been declared.")
+}
