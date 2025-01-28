@@ -230,3 +230,112 @@ try{
 } catch(error){
     console.error("Error: this variable has not been declared.")
 }
+
+// IF STATEMENTS //
+
+let age = 25;
+
+if (age >= 21){
+    console.log("You are a legal adult.");
+}
+else{
+    console.log("You are a minor.");
+}
+
+// Nested if Statements
+// Got a license?
+
+let hasLicense = true // Boolean true false variable
+
+if(age >= 16){ // if age >= 16
+    if(hasLicense == true){ // Yes to license
+        console.log("You are old enough to rive and have your license.");
+    }
+    else {
+        console.log("You're old enough to drive, but still need a license.");
+    }
+    
+}
+else{ // if age < 16
+    console.log("You are not enough old to drive.");
+}
+
+// else if statement. Enter a social media site. Gotta be 13+
+
+age = 13;
+
+
+if(age >= 100){
+    console.log("You are TOO OLD to brainrot.");
+}
+else if(age < 0){
+    console.log("You cannot be younger than nothing.");
+}
+else if(age == 0){
+    console.log("How is a baby on tiktok?");
+}
+else if(age >= 13){
+    console.log("You are old enough to doomscroll...");
+}
+else{
+    console.log("You must be 13+ to scroll tiktok.");
+}
+
+// Function are reusable sections of code.
+// Declare code once, use it whenever you want after that.
+// Call the function to execute that code.
+
+// SYNTAX OF FUNCTION FOR JAVASCRIPT //
+/*
+function functionname(parameters, parameters){
+    // function code goes here
+}
+*/
+
+function happyBirthday(username, birthdayAge){
+    console.log("Happy birthday to you");
+    console.log("Happy birthday to you");
+    console.log(`Happy birthday dear ${username}`);
+    console.log("Happy birthday to you");
+    console.log(`You are ${birthdayAge} years old.`);
+}
+
+happyBirthday("Evan", 45); // Arguments
+happyBirthday("Mr. Gardner", 38);
+happyBirthday("Marcus", 56);
+
+function add(x, y){
+    let result = x + y;
+    return result
+}
+let answer = add(2, 3)
+console.log(answer)
+console.log(add(3,5))
+
+function subtract(x, y){
+    let result = x - y;
+    return result
+}
+
+let subtractAnswer = subtract(8, 5);
+console.log(subtractAnswer)
+/*
+function isEven(number){
+    if (number % 2 == 0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+*/
+function isEven(number){
+    return number % 2 === 0 ? true : false; // Ternary Operator
+}
+
+console.log(isEven(12));
+
+function isValidEmail(email){
+    return email.includes("@") ? true : false;
+}
+console.log(isValidEmail("etgardner@waketech.edu"))
