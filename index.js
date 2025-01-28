@@ -231,6 +231,8 @@ try{
     console.error("Error: this variable has not been declared.")
 }
 
+// MODULE 4 (M4) //
+
 // IF STATEMENTS //
 
 let age = 25;
