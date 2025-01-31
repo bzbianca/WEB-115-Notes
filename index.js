@@ -207,7 +207,7 @@ finally {
 //     console.error(error)
 // }
 // console.log("You have reached the end.");
-
+/*
 try{
     const dividend = window.prompt("Enter a dividend");
     const divisor = window.prompt("Enter a divisor");
@@ -230,7 +230,7 @@ try{
 } catch(error){
     console.error("Error: this variable has not been declared.")
 }
-
+*/
 // MODULE 4 (M4) //
 
 // IF STATEMENTS //
@@ -341,3 +341,78 @@ function isValidEmail(email){
     return email.includes("@") ? true : false;
 }
 console.log(isValidEmail("etgardner@waketech.edu"))
+
+// LOOPS //
+
+// While loop //
+// Repeat some code WHILE condition is true
+/*
+let username = "";
+
+if(username === ""){
+    console.log(`You didn't enter your name.`);
+}
+else{
+    console.log(`Hello ${username}`);
+}
+*/
+/*
+1. while(condition){code}
+2. do{code}while(condition)
+*/
+/*
+let myUsername = "";
+
+while(myUsername === ""){
+    console.log(`Name no found.`);
+    myUsername = window.prompt(`Enter your name`);
+}
+console.log("While loop finished.");
+console.log(`Hello ${myUsername}`);
+*/
+// ANOTHER WAY VIA DO WHILE. RUN CODE FIRST, THEN CHECK CONDITION.
+/*
+let myName;
+
+// || means or
+// ! means not
+
+do{
+    myName = window.prompt(`Enter your name`);
+}while(myName === "" || myName === null);
+*/
+let loggedIn = false;
+let myNewUserName;
+let myPassword;
+
+while(!loggedIn){
+    myNewUserName = window.prompt(`Enter your Username.`)
+    myPassword = window.prompt(`Enter your Password`)
+    if(myNewUserName === "username" && myPassword === "password"){
+        loggedIn = true;
+        console.log("Log in success!")
+    }
+    else{
+        console.log("Invalid credentials. Try again.")
+    }
+}
+
+// FOR LOOPS //
+// Repeat some code a LIMITED amount of times.
+
+for(let i = 0; i <=2; i++){ // i = 0; i <=2; i++
+    console.log("Hello");
+    console.log(i)
+}
+for(let i = 1; i <= 20; i++){
+    if(i == 13){
+        break; // continue; (continue will skip that part of the loop, while break will break out of the loop)
+    }
+    console.log(i)
+}
+
+/*
+1. for(counter;condition;increment or decrement{code}
+* continue; will skip iteration
+* break; will exit the loop
+*/
