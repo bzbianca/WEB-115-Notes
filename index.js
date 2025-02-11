@@ -126,6 +126,7 @@ console.log(typeof myAge)
 myAge = Number(myAge) // Convert to number
 console.log(typeof myAge)
 */
+/*
 let x = "pizza";
 let y = "pizza";
 let z = "";
@@ -136,7 +137,7 @@ y = String(y);
 console.log(typeof y)
 z = Boolean(z); // checks if the string has stuff in it, false = empty, true = has string
 console.log(z)
-
+*/
 
 /*
 
@@ -531,3 +532,91 @@ for (i in person){
 for (i in person) {
     console.log(i + ": " + person[i]);
 }
+
+// MATH Object = a built-in object that provides
+//              a collection of properties & methods
+/*
+let x = 1.99;
+let y = 4;
+let z = 8.2
+
+console.log(Math.PI); // Gives value of PI. 3.14159265
+console.log("The minimum is: " + Math.min(x, y, z)); // find minimum
+console.log("THe maximum is: " + Math.max(x, y, z)); // find maximum
+
+
+console.log(Math.sqrt(y)); // find square root
+console.log(Math.round(z)); // general round
+console.log(Math.floor(x)); // round down
+console.log(Math.ceil(x)); // round up
+
+console.log(Math.trunc(z)); // remove decimal portion
+console.log(Math.pow(x,y)) // x to the power of y
+
+console.log(Math.sign(0)) // returns whether x is NEGATIVE(-1), NULL(0), or POSITIVE(1)
+
+console.log(Math.random); // Returns a random number between 0 (inclusive ... )
+console.log(Math.random() * 10) // Returns a random number from 0-9
+console.log(Math.random() * 11) // Returns a random number from 0-10
+console.log(Math.random() * 101) // Returns a random number from 0-100
+
+let min = 1;
+let max = 100;
+
+//This is JS function always returns a random number
+//              between min (included) and max and (excluded)
+// Returns random number that could be 1-99
+function getRndIntegerExclusive(min, max) {
+    return Math.floor(Math.random() * (max - min) ) - min;
+}
+
+//This JS function always returns a random number
+// between min and max (both included) (1-100).
+
+function getRndIntegerInclusive(min, max) {
+return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+*/
+
+// SPREAD OPERATOR = ... allows an iterable items such as an
+//[array] or "string" to be expanded into separate elements.
+//                          (unpacks the elements)
+
+let numbers = [1,2,3,4,5];
+
+// cannot pass array to Math.max. Returns NaN.
+let maximum = Math.max(numbers)
+
+// use spread operator on [numbers]
+let newMaximum = Math.max(...numbers) 
+
+console.log(maximum)
+console.log(newMaximum)
+
+let minimum = Math.min(...numbers);
+console.log(minimum);
+
+// Spread strings
+
+let username = "Mr. Gardner"
+let letters = [...username];
+console.log(username)
+
+console.log(letters) // unpacks the string into individual letters
+
+// All one string, but dash between each letter.
+let assembledUsername = [...username].join("-"); 
+console.log(assembledUsername)
+
+// Combining arrays with spread operator
+
+let fruitsAgain = ["apple", "orange", "banana"];
+let vegetables = ["carrots", "peppers", "broccoli"];
+
+// combines fruits Again + vegetables
+let foods = [...fruitsAgain, ...vegetables];
+console.log(foods)
+
+// combines fruitsAgain + vegetables
+foods = [...fruitsAgain, ...vegetables, "eggs", "milk"];
+console.log(foods);
