@@ -382,6 +382,7 @@ do{
     myName = window.prompt(`Enter your name`);
 }while(myName === "" || myName === null);
 */
+/*
 let loggedIn = false;
 let myNewUserName;
 let myPassword;
@@ -397,7 +398,7 @@ while(!loggedIn){
         console.log("Invalid credentials. Try again.")
     }
 }
-
+*/
 // FOR LOOPS //
 // Repeat some code a LIMITED amount of times.
 
@@ -457,10 +458,10 @@ for(let fruit of fruits){
     console.log(fruit);
 }
 
-// Sort method
+// Sort method (alpha A-Z)
 fruits.sort();
 console.log(fruits);
-// Reverse sort.
+// Reverse sort. (alpha Z-A)
 fruits.reverse();
 console.log(fruits);
 
@@ -586,9 +587,11 @@ let numbers = [1,2,3,4,5];
 
 // cannot pass array to Math.max. Returns NaN.
 let maximum = Math.max(numbers)
+console.log(numbers)
 
 // use spread operator on [numbers]
 let newMaximum = Math.max(...numbers) 
+console.log(...numbers)
 
 console.log(maximum)
 console.log(newMaximum)
@@ -620,3 +623,121 @@ console.log(foods)
 // combines fruitsAgain + vegetables
 foods = [...fruitsAgain, ...vegetables, "eggs", "milk"];
 console.log(foods);
+
+// CONDITIONAL (Logical Operators) in JS
+// Used to combine or manipulate boolean values (true or false)
+// AND operator == && (python verison = and)
+// OR operator = || (python verison = or)
+// NOT operator =! (python verison = not)
+
+// === is the Strict Equality Operator
+// !== is the Strict INEQUALITY Operator
+
+let x = true;
+let y = false;
+let z = true;
+
+// Simple boolean check
+
+if(y){
+    console.log("this true")
+}else{
+    console.log("this is false")
+}
+
+// The ANd && operator
+if(x && y){
+    console.log("x and y are true")
+}else{
+    console.log("x and y together are not true")
+}
+
+// The OR || operator
+
+if(x || y){
+    console.log("x or y is true")
+}else{
+    console.log("Neither x nor y are true")
+}
+
+// The NOT ! operator
+if(!x){
+    console.log("x is not true")
+}else{
+    console.log("x is true")
+}
+
+const temp = 75;
+/* // NOT THE BEST WAY TO DO THIS
+if(temp > 0){
+    console.log("The weather is above 0")
+} else if(temp == 32){
+    console.log("The temp has just hit freezing.")
+} else{
+    console.log("The temp is below 0")
+}
+*/
+
+// Check range of numbers with logical operators
+
+if (temp > 70 && temp < 80){
+    console.log("The temp is ideal")
+}else{
+    console.log("The temp is not ideal.")
+}
+
+// Check range with OR operator
+
+if (temp > 90 || temp < 60){
+    console.log("The temp is extreme (hot or cold)")
+} else{
+    console.log("The temp is within an acceptable range.")
+}
+
+// if operator number range check
+
+if(!(tem > 100) || temp < 50){ // NOT too hot OR too cold
+    console.log("Temp is acceptable")
+}else{
+    console.log("temp is extreme (too hot or too cold)")
+}
+
+// Equality & Strict Equality
+/*
+    = assignment operator
+    == comparison operator (check if values are equal)
+    === strict equality operator (compares if values AND the datatype are equal)
+    != inequality operator
+    !== STRICT inequality operator
+*/
+
+const PI = 3.14;
+console.log(typeof PI);
+
+if(Pi == "3.14"){
+    console.log("That is Pi.")
+} else{
+    console.log("That is NOT PI.")
+}
+
+// The string 3.14 is == the number 3.14 in JavaScript
+if(Pi === "3.14"){
+    console.log("That is Pi.")
+} else{
+    console.log("That is NOT PI.")
+}
+
+
+// If the two are no equal this should evaluate to rue and trigger the else statement
+if(PI != "3.14"){
+    console.log("That is NOT Pi.")
+}else{
+    console.log("This is Pi.")
+}
+
+// Here the two are STRICTLY NOT equal, evaluating the if statement
+if(PI !== "3.14"){
+    console.log("That is NOT Pi.")
+}else{
+    console.log("This is Pi.")
+}
