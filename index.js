@@ -626,7 +626,7 @@ console.log(foods);
 
 // CONDITIONAL (Logical Operators) in JS
 // Used to combine or manipulate boolean values (true or false)
-// AND operator == && (python verison = and)
+// AND operator = && (python verison = and)
 // OR operator = || (python verison = or)
 // NOT operator =! (python verison = not)
 
@@ -696,7 +696,7 @@ if (temp > 90 || temp < 60){
 
 // if operator number range check
 
-if(!(tem > 100) || temp < 50){ // NOT too hot OR too cold
+if(!(temp > 100) || temp < 50){ // NOT too hot OR too cold
     console.log("Temp is acceptable")
 }else{
     console.log("temp is extreme (too hot or too cold)")
