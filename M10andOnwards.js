@@ -104,3 +104,85 @@
 //     name: "Angel",
 //     surname: "___",
 // }
+
+
+// OBJECTS
+// A collection of related
+// date (properties) and
+// functions (methods)
+// Often represent real-world entity
+// ex. book, movie, person.
+
+// STRUCTURE
+const object = {
+    propertyname: "object",
+    secondproperty: "thing2"
+}
+console.log(object)
+
+// EXAMPLE
+const steve = {
+    // OBJECT STATES
+    // These properties describe
+    // the state of an object.
+    // or its characteristics.
+    firstName: "Steve",
+    lastName: "Minecraft",
+    age: 55,
+    isEmployed: false,
+    // OBJECT BEHAVIORS (methods)
+    sayHello: function() {
+        console.log("I... AM STEVE")
+    },
+    action: function() {
+        console.log("CHICKEN JOCKEY!!!")
+    },
+}
+console.log(steve.lastName)
+steve.sayHello()
+steve.action()
+
+const spongeBob = {
+    firstName: "Spongebob",
+    lastName: "Squarepants",
+    age: 26,
+    isEmployed: true,
+    sayHello: function() {
+        console.log("Hi! I am Spongebob!")
+    },
+    action: function() {
+        console.log("I am making a Krabby Patty.")
+    },
+}
+steve.sayHello()
+spongeBob.sayHello()
+
+let book = {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    displayInfo: function() {
+        console.log(`${this.title} by ${this.author}`);
+    },
+}
+book.displayInfo();
+
+class Book {
+    constructor(title, author, genre) {
+        this.title = title;
+        this.author = author;
+        this.genre = genre;
+    }
+    displayInfo() {
+        console.log(`${this.title} by ${this.author} - Genre: ${this.genre}`)
+    }
+}
+
+let myBook = new Book("The Hobbit", "J.R.R. Tolkien", "Fantasy");
+myBook.displayInfo()
+
+let mySecondBook = new Book("Dune", "Frank Herbert", "Sci-Fi")
+mySecondBook.displayInfo();
+
+// #property is a private property example
+
+// INTERHITANCE
