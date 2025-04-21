@@ -186,3 +186,130 @@ mySecondBook.displayInfo();
 // #property is a private property example
 
 // INTERHITANCE
+
+
+
+/* 
+Javascript Scoping
+Global Scope
+Logic Scope
+Block Scope
+Module Scope
+Scope is a place to store variables
+*/
+
+// const a = 1
+
+// function test() {
+//     const b = 2
+//     console.log(a, b)
+// }
+
+// test()
+// console.log(a, b)
+
+// const globalVar = "Global"
+// console.log(globalVar)
+
+// const moduleVar = "Module"
+
+// export const exportedVar = "Exported"
+// new file to explicitly export that file into the new file
+/* import { exportedVar } from "./moduleScript.js"*/
+
+// function test() {
+//     const b = 2
+//     const c = 1
+
+//     if (true) { // block scope is the first and the last curl brackets
+//         const c = 3 // if you use var instead of const then it will become function scopes instead of just a block scope
+//         console.log(b, c)
+//     }
+//     console.log(c)
+// }
+
+// test()
+
+
+
+/* Hoisting */
+
+// function sumFunc(a, b) {
+//     return a + b
+// }
+
+// console.log(`sumFunc(1, 2) => ${sumFunc(1, 2)}`)
+// console.log(`sumConst(3, 4) => ${sumConst(3, 4)}`)
+
+// const sumConst = (a, b) = a + b
+
+// var a = undefined // hoist the variable until you initialize it
+// const a = undefined
+
+// console.log(a)
+
+// a = 2
+
+
+/* Closure */
+// A closure can be created by making an outer function with all of your current functions
+// A function defined inside of another function, the inner function has access to the variables and scope of the outer function. Allow for private variablles and state maintenance. Used frequently in JS frameworks: React, Vue, Angular
+
+// EXAMPLE 1:
+// function outer() {
+//     let message = "Hello"
+
+//     function inner() {
+//         console.log(message)
+//     }
+
+//     inner();
+// }
+
+// outer()
+
+// EXAMPLE 2:
+// function createCounter() { // private it, like an object
+//     let count = 0; // variable is private
+
+//     function increment() {
+//         count++;
+//         console.log(`Count increased to ${count}`)
+//     }
+
+//     function getCount(){
+//         return count
+//     }
+
+//     return {increment}
+// }
+
+// const counter = createCounter();
+
+// counter.increment();
+// counter.increment(); 
+
+// console.log(`current count is ${counter.getCount()}`)
+
+// EXAMPLE 3:
+
+// function createGame() {
+    
+//     let score = 0;
+
+//     function increaseScore(points){
+//         score += points
+//         console.log(`+${points}pts`);
+//     }
+
+//     function decreaseScore(points){
+//         score -= points
+//         console.log(`-${points}pts`);
+//     }
+
+//     function getScore(){
+//         return score;
+//     }
+
+//     return {increase, decreaseScore, getScore}
+// }
