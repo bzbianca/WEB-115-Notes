@@ -1,0 +1,44 @@
+{
+    "cast": [
+        {
+            "name": "Steve Carell",
+            "character": "Michael Scott",
+            "position": "Regional Manager",
+            "age": 43,
+            "hobbies": ["Improv comedy", "Magic tricks", "Ice skating"],
+            "dundieAward": "Best Boss"
+        },
+        {
+            "name": "Rainn Wilson",
+            "character": "Dwight Schrute",
+            "position": "Assistant to the Regional Manager",
+            "age": 38,
+            "hobbies": ["Bears", "Beets", "Battlestar Galactica"],
+            "dundieAward": "Best Assistant to the Regional Manager"
+        },
+        {
+            "name": "John Krasinski",
+            "character": "Jim Halpert",
+            "position": "Sales Representative",
+            "age": 30,
+            "hobbies": ["Pranking Dwight", "Basketball", "Cycling"],
+            "dundieAward": "Best Prankster"
+        },
+        {
+            "name": "Jenna Fischer",
+            "character": "Pam Beesly",
+            "position": "Receptionist",
+            "age": 29,
+            "hobbies": ["Painting", "Sketching", "Reading"],
+            "dundieAward": "Best Receptionist"
+        },
+        {
+            "name": "Ed Helms",
+            "character": "Andy Bernard",
+            "position": "Sales Representative",
+            "age": 37,
+            "hobbies": ["A cappella singing", "Boating", "Banjo playing"],
+            "dundieAward": "Best A Cappella Performance"
+        }
+    ]
+}

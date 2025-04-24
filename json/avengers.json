@@ -1,0 +1,52 @@
+{
+    "avengersCast": [
+        {
+            "name": "Robert Downey Jr.",
+            "character": "Tony Stark / Iron Man",
+            "superpowers": ["Genius-level intellect", "Powered armor suit", "Advanced technology"],
+            "age": 58
+        },
+        {
+            "name": "Chris Evans",
+            "character": "Steve Rogers / Captain America",
+            "superpowers": ["Enhanced strength", "Enhanced agility", "Enhanced endurance", "Expert tactician"],
+            "age": 42
+        },
+        {
+            "name": "Scarlett Johansson",
+            "character": "Natasha Romanoff / Black Widow",
+            "superpowers": ["Expert martial artist", "Master spy", "Weapons expert"],
+            "age": 38
+        },
+        {
+            "name": "Chris Hemsworth",
+            "character": "Thor",
+            "superpowers": ["Superhuman strength", "Control over lightning", "Immortality", "Flight"],
+            "age": 40
+        },
+        {
+            "name": "Mark Ruffalo",
+            "character": "Bruce Banner / Hulk",
+            "superpowers": ["Superhuman strength", "Regeneration", "Limitless stamina"],
+            "age": 55
+        },
+        {
+            "name": "Jeremy Renner",
+            "character": "Clint Barton / Hawkeye",
+            "superpowers": ["Master archer", "Expert tactician", "Enhanced reflexes"],
+            "age": 52
+        },
+        {
+            "name": "Tom Hiddleston",
+            "character": "Loki",
+            "superpowers": ["Illusion casting", "Shapeshifting", "Superhuman strength", "Sorcery"],
+            "age": 42
+        },
+        {
+            "name": "Samuel L. Jackson",
+            "character": "Nick Fury",
+            "superpowers": ["Master strategist", "Expert marksman", "Espionage"],
+            "age": 74
+        }
+    ]
+}
