@@ -74,11 +74,11 @@ const parsedData = JSON.parse(jsonBikiniBottom)
 console.log(parsedData)
 
 // fetch()
-fetch("./person.json") // Feteches the "person.json" file from the local file
-    .then(response => response.json()) // Converts the response to a JSON
+fetch("./person.json") // Fetches the "person.json" file from the local files.
+    .then(response => response.json()) // Converts the response to a JSON object.
     .then(value => console.log(value)) // Logs the parsed JSON objefct to the console.
 
-// Iterate through an Array of Objects with fetch using forEach
+// Iterate through an Array of Objects with fetch using forEach.
 fetch("./bikini-bottom.json")
     .then(response => response.json())
     .then(values => values.forEach(value => console.log(value.name)))
